@@ -1,0 +1,9 @@
+@model User
+<h1 class="text-success">Success</h1>
+<div class="text-center">
+  <p>@Model.FirstName</p>
+  <p>@Model.LastName</p>
+  <p>@Model.Email</p>
+</div>
+
+<a asp-action="Logout" asp-controller="User" class="btn btn-dark">Logout</a>
