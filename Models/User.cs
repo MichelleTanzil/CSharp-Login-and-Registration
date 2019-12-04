@@ -28,15 +28,14 @@ namespace login_and_registration.Models
         [Compare("ConfirmPassword")]
         [MinLength(8)]
         public string Password { get; set; }
-        
+
         [NotMapped]
         [Required]
         [DataType(DataType.Password)]
         [MinLength(8)]
         [Display(Name = "Confirm Password")]
         public string ConfirmPassword { get; set; }
-
-        public DateTime CreatedAt { get;set; } = DateTime.Now;
-        public DateTime UpdatedAt { get;set; } = DateTime.Now;
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
     }
 }
